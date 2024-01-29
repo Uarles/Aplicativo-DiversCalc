@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_tela_de_perfil"
+    android:layout_centerVertical="true"
+    tools:context=".TelaImc">
+
+    <TextView
+        android:id="@+id/logoImc"
+        android:layout_width="407dp"
+        android:layout_height="75dp"
+        android:text="Calculadora de IMC"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ciclo_imc"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingTop="80dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImc"/>
+
+    <TextView
+        android:id="@+id/textImc"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="33dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingStart="53dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImc"/>
+
+    <TextView
+        android:id="@+id/textAbixoPeso"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/container_abixo_peso"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImc"/>
+
+    <TextView
+        android:id="@+id/textPesoNormal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/container_peso_normal"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImc"/>
+
+    <TextView
+        android:id="@+id/textSobrePeso"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/container_sobrepeso"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImc"/>
+
+    <TextView
+        android:id="@+id/textObesidadeGrau1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/container_obesidade_grau1"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImc"/>
+
+    <TextView
+        android:id="@+id/textObesidadeGrau2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/container_obesidade_grau2"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImc"/>
+
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edit_text"
+        android:hint="Informe o seu peso (KG)"
+        android:textSize="20dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/baseline_balance_24"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResultado"/>
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text"
+        android:hint="Informe a sua altura (M)"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/altura_icone"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPeso"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btCalcular"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Calcular"
+        android:textAllCaps="false"
+        android:padding="20dp"
+        android:background="@drawable/btn_perfil"
+        app:layout_constraintStart_toStartOf="@id/editAltura"
+        app:layout_constraintTop_toBottomOf="@id/editAltura"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

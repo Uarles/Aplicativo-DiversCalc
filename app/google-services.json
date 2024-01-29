@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "163906506767",
+    "project_id": "diverscalc",
+    "storage_bucket": "diverscalc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163906506767:android:691cc74c11fb8beb29137a",
+        "android_client_info": {
+          "package_name": "com.example.diverscalc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyQw5iv208VyBBvK2rwW0uoefq-cdEtUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

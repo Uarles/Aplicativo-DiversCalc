@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela_principal"
+    android:alpha="0.7"
+    tools:context=".TelaPrincipal">
+
+    <View
+        android:id="@+id/containerUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0.9"
+        android:background="@drawable/container_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/iconePerfil"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/user"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@id/containerUser"
+        app:layout_constraintEnd_toEndOf="@id/containerUser"
+        app:layout_constraintTop_toTopOf="@id/containerUser"
+        app:layout_constraintTop_toBottomOf="@id/containerUser"/>
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="405dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="92dp"
+        android:padding="40dp"
+        android:text="DiversCalc"
+        android:textColor="@color/teal_700"
+        android:textSize="66sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btImc"
+        style="@style/botoes_tela_principal"
+        android:layout_width="150dp"
+        android:layout_marginTop="104dp"
+        android:text="IMC"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        tools:layout_editor_absoluteX="38dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/botoes_tela_principal"
+        android:id="@+id/text_adivinhar"
+        android:layout_width="150dp"
+        android:textSize="24dp"
+        android:text="ADN"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/textCalculo"
+        style="@style/botoes_tela_principal"
+        android:layout_width="150dp"
+        android:layout_marginTop="76dp"
+        android:text="CALC"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btImc"
+        app:layout_constraintStart_toStartOf="@+id/btImc"
+        app:layout_constraintTop_toBottomOf="@id/btImc" />
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_adivinhar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DiversCalc</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="text_cadastro">Não é cadastrado? Cadastre-se</string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <string name="sobre">DiversCalc, foi criado por Uarles Lemes Dos Santos, em janeiro de 2024, ele é um aplicativo
+    que trás para o usuário diversas funcionalidades, como calculo do IMC, tem um joguinho para adivinhar numeros, calculadora
+    e outro jogo de calculo, é um aplicativo votado para a matemática, que vai ter novas atualizações e novas funcionalidades
+    pensando direto na experiêcia de usuário.</string>
+    <string name="adivinharNumeros">Tente acertar o número entre 0 e 50.</string>
+    <string name="obesidadeGrauI">Obesidade Gráu I</string>
+</resources>
